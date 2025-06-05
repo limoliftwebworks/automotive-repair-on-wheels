@@ -14,7 +14,8 @@
     "upload-images": "ts-node -P tsconfig.json scripts/upload_review_images.ts",
     "supabase:migration": "supabase db push",
     "post-publish": "node scripts/fix-config-types.js",
-    "validate-config": "node scripts/fix-config-types.js"
+    "validate-config": "node scripts/fix-config-types.js",
+    "fix-images": "node scripts/fix-hardcoded-images.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
