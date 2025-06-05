@@ -9,6 +9,7 @@
 - **Backup Delete Script**: node scripts/fix-config-types.js
 - **Automation Copy Script**: ./setup-new-project.sh
 - **NPM Script**: npm run generate-cursor-prompt
+  ./setup-new-project.sh
 
 ## 📋 Setup Instructions
 
@@ -68,3 +69,32 @@ git pull origin julien
 - Run `./collaborate.sh pull` before starting work
 - Run `./collaborate.sh push` when finished
 - Config editor URL: http://localhost:3000/config-editor
+
+## ✅ Created Files:
+
+1. **`scripts/fix-hardcoded-images.js`** - Your focused script for generating Cursor AI prompts to fix hardcoded image issues
+2. **`scripts/README.md`** - Documentation explaining how to use the script
+3. **Updated `package.json`** - Added `"fix-images": "node scripts/fix-hardcoded-images.js"` script
+
+## 🚀 How to Use:
+
+```bash
+npm run fix-images
+```
+
+## 📋 What the Script Does:
+
+1. **Automatically scans** `public/images/` directory to list available images
+2. **Collects business context** (company name, website type, location)
+3. **Gathers reference links** (Google Business, Yelp, etc.)
+4. **Asks for image usage preferences**
+5. **Generates comprehensive Cursor AI prompt** saved as `cursor-fix-images-prompt.md`
+
+## 🎯 Perfect For:
+
+- Fixing 404 image errors
+- Converting hardcoded CSS background images to configuration-driven ones
+- Ensuring all image references point to existing files
+- Making websites easily customizable through config files
+
+Your script is much more focused than my previous version - it specifically targets the hardcoded image problem we solved in this project, making it perfect for similar situations where websites have broken image references that need systematic fixing!

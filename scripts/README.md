@@ -1,10 +1,50 @@
 # Scripts Directory
 
-## Fix Hardcoded Images Script
+## 🚗 Automotive Website Redesign Script
 
 ### Usage
 
-Run the script to generate a comprehensive Cursor AI prompt for fixing hardcoded image references:
+Run the script to generate a comprehensive Cursor AI prompt for redesigning automotive websites:
+
+```bash
+npm run generate-automotive-redesign
+```
+
+### What it does
+
+1. **Scans Available Images**: Automatically detects all images in `public/images/` directory with file sizes
+2. **Collects Business Information**: Prompts for name, address, phone, email, specialties, hours
+3. **Gathers Reference Links**: Google Business, Yelp, Facebook, and other business profiles
+4. **Brand & Design Details**: Colors, personality, target audience
+5. **Customer Reviews**: Option to use template reviews or paste actual ones
+6. **Generates Comprehensive Cursor AI Prompt**: Creates detailed instructions for complete website redesign
+
+### Output
+
+The script generates `cursor-automotive-redesign-prompt.md` containing:
+
+- Complete business context and branding guidelines
+- Page-by-page redesign checklist (Home, Services, Reviews, Contact, Careers, Blog)
+- LocalConfig.ts update requirements
+- Visual consistency and functionality verification
+- SEO and local business optimization
+- Mobile and emergency service considerations
+
+### Key Features
+
+- **Extremely Detailed Analysis**: Covers every page and section
+- **LocalConfig.ts Focused**: Only uses values accessible in configuration
+- **Automotive Industry Specific**: Tailored for tire shops, auto repair, mobile mechanics
+- **Customer Review Integration**: Uses actual business personality and tone
+- **Professional Standards**: Ensures trustworthy, service-focused presentation
+
+---
+
+## 🔧 Fix Hardcoded Images Script
+
+### Usage
+
+Run the script to generate a Cursor AI prompt for fixing hardcoded image references:
 
 ```bash
 npm run fix-images
