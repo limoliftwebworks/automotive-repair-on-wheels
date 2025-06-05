@@ -7,7 +7,7 @@
 - **Live Site**: http://localhost:3000
 - **Color Hex Finder**: https://www.color-hex.com/color-palette/1294
 - **Backup Delete Script**: node scripts/fix-config-types.js
-- **Automation Copy Script**: node scripts/fix-config-types.js
+- **Automation Copy Script**: ./setup-new-project.sh
 - **NPM Script**: npm run generate-cursor-prompt
 
 ## 📋 Setup Instructions
