@@ -310,7 +310,20 @@ export default function CareersPage() {
       <section
         className="pb-16 relative overflow-hidden bg-gradient-to-br"
         style={{
-          backgroundImage: `linear-gradient(to bottom right, ${careersConfig.heroBgGradientFrom}, ${careersConfig.heroBgGradientVia}, ${careersConfig.heroBgGradientTo})`,
+          backgroundImage: careersConfig.heroImage
+            ? `linear-gradient(to bottom right, ${
+                careersConfig.heroBgGradientFrom
+              }, ${careersConfig.heroBgGradientVia}, ${
+                careersConfig.heroBgGradientTo
+              }), url(${
+                careersConfig.heroImage.startsWith("/")
+                  ? careersConfig.heroImage
+                  : `/images/${careersConfig.heroImage}`
+              })`
+            : `linear-gradient(to bottom right, ${careersConfig.heroBgGradientFrom}, ${careersConfig.heroBgGradientVia}, ${careersConfig.heroBgGradientTo})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           paddingTop: careersConfig.heroPaddingTop || "128px",
         }}
       >

@@ -62,7 +62,20 @@ export default function ReviewsPage() {
       <section
         className="relative pt-32 pb-20 overflow-hidden"
         style={{
-          background: `linear-gradient(to bottom right, ${reviewsConfig.heroBgGradientFrom}, ${reviewsConfig.heroBgGradientVia}, ${reviewsConfig.heroBgGradientTo})`,
+          backgroundImage: reviewsConfig.heroImage
+            ? `linear-gradient(to bottom right, ${
+                reviewsConfig.heroBgGradientFrom
+              }, ${reviewsConfig.heroBgGradientVia}, ${
+                reviewsConfig.heroBgGradientTo
+              }), url(${
+                reviewsConfig.heroImage.startsWith("/")
+                  ? reviewsConfig.heroImage
+                  : `/images/${reviewsConfig.heroImage}`
+              })`
+            : `linear-gradient(to bottom right, ${reviewsConfig.heroBgGradientFrom}, ${reviewsConfig.heroBgGradientVia}, ${reviewsConfig.heroBgGradientTo})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {/* Animated background elements */}

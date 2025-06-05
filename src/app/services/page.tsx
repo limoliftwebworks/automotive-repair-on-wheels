@@ -345,7 +345,7 @@ function ServicesContent() {
       icon: <ExclamationTriangleIcon className="w-full h-full" />,
       description:
         "Complete collision repair services to restore your vehicle to pre-accident condition",
-      bgImage: "/images/back1.png",
+      bgImage: "autored1.png",
       color: "from-primary-500 to-primary-600",
       iconColor: "#ffffff",
       titleColor: "#ffffff",
@@ -581,11 +581,24 @@ function ServicesContent() {
       <section
         className="relative pt-24 md:pt-32 pb-16 overflow-hidden bg-gradient-to-br from-primary-800 via-primary-700 to-primary-600"
         style={{
-          background: `linear-gradient(to bottom right, ${
-            servicesConfig.heroBgGradientFrom || "#dc7070"
-          }, ${servicesConfig.heroBgGradientVia || "#e69999"}, ${
-            servicesConfig.heroBgGradientTo || "#e69999"
-          })`,
+          backgroundImage: servicesConfig.heroImage
+            ? `linear-gradient(to bottom right, ${
+                servicesConfig.heroBgGradientFrom || "#dc7070"
+              }, ${servicesConfig.heroBgGradientVia || "#e69999"}, ${
+                servicesConfig.heroBgGradientTo || "#e69999"
+              }), url(${
+                servicesConfig.heroImage.startsWith("/")
+                  ? servicesConfig.heroImage
+                  : `/images/${servicesConfig.heroImage}`
+              })`
+            : `linear-gradient(to bottom right, ${
+                servicesConfig.heroBgGradientFrom || "#dc7070"
+              }, ${servicesConfig.heroBgGradientVia || "#e69999"}, ${
+                servicesConfig.heroBgGradientTo || "#e69999"
+              })`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {/* Animated background elements */}

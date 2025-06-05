@@ -82,7 +82,20 @@ export default function Contact() {
       <section
         className="pt-32 pb-20 relative overflow-hidden"
         style={{
-          background: `linear-gradient(to bottom right, ${contactConfig.heroBgGradientFrom}, ${contactConfig.heroBgGradientVia}, ${contactConfig.heroBgGradientTo})`,
+          backgroundImage: contactConfig.heroImage
+            ? `linear-gradient(to bottom right, ${
+                contactConfig.heroBgGradientFrom
+              }, ${contactConfig.heroBgGradientVia}, ${
+                contactConfig.heroBgGradientTo
+              }), url(${
+                contactConfig.heroImage.startsWith("/")
+                  ? contactConfig.heroImage
+                  : `/images/${contactConfig.heroImage}`
+              })`
+            : `linear-gradient(to bottom right, ${contactConfig.heroBgGradientFrom}, ${contactConfig.heroBgGradientVia}, ${contactConfig.heroBgGradientTo})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {/* Modern decorative elements */}

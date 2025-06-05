@@ -438,8 +438,6 @@ body[data-config-page="true"] * {
 /* Component styles */
 .hero-section {
   position: relative;
-  background: linear-gradient(rgba(17, 24, 39, 0.85), rgba(3, 105, 161, 0.9)),
-    url("/images/davis2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

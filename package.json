@@ -1,8 +1,8 @@
 {
-  "name": "three-guys-auto-services",
+  "name": "automotive-repair-on-wheels",
   "version": "1.0.0",
   "private": true,
-  "description": "Davis Tree Template Site",
+  "description": "Automotive Repair On Wheels",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
