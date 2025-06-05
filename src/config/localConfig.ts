@@ -117,7 +117,7 @@ const localConfig: LocalConfig = {
       "heroContentColor": "#ffffff",
       "subtitle2": "Quality collision repair with exceptional customer service. Get your car back to pre-accident condition with our skilled technicians.",
       "heroSubtitleColor": "#e2f1ff",
-      "heroImage": "auto1.png",
+      "heroImage": "autored2.png",
       "heroMobileImage": "TC-MOBILE-BG.png",
       "heroGradientTop": "rgba(30, 64, 176, 1)",
       "heroGradientBottom": "#1e3a8a",
