@@ -400,7 +400,7 @@ function ServicesContent() {
       icon: <SparklesIcon className="w-full h-full" />,
       description:
         "Premium cosmetic services to enhance and protect your vehicle's appearance",
-      bgImage: "/images/back5.png",
+      bgImage: "autored3.png",
       color: "from-primary-500 to-primary-600",
       iconColor: "#ffffff",
       titleColor: "#ffffff",
@@ -455,7 +455,7 @@ function ServicesContent() {
       icon: <CogIcon className="w-full h-full" />,
       description:
         "Essential mechanical services and diagnostics for optimal vehicle performance",
-      bgImage: "/images/back4.png",
+      bgImage: "autored4.png",
       color: "from-primary-500 to-primary-600",
       iconColor: "#ffffff",
       titleColor: "#ffffff",
